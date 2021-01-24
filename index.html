@@ -21,12 +21,16 @@
     <!-- Navbar -->
     <div class="navbar">
       <div class="container flex">
-        <h1 class="logo text-light">MagX</h1>
+        <h1 class="logo text-dark">MagX</h1>
         <nav>
           <ul>
-            <li><a class="text-light" href="index.html">Home</a></li>
-            <li><a class="text-light" href="features.html">About Us</a></li>
-            <li><a class="text-light" href="docs.html">Contact</a></li>
+            <li><a id="homeB" class="text-light" href="#">Home</a></li>
+            <li>
+              <a id="aboutB" class="text-light" href="#">About Us</a>
+            </li>
+            <li>
+              <a id="contactB" class="text-light" href="#">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -46,15 +50,15 @@
     </section>
 
     <!-- about us -->
-    <section class="about">
-      <div class="container grid">
+    <section class="about" id="aboutSection">
+      <div class="container grid" style="overflow: hidden">
         <!-- left element -->
         <div class="element" data-aos="fade-right">
-          <img src="assets/magician.jpg" alt="" />
+          <img src="assets/t2.jpg" alt="" />
         </div>
         <!-- right element -->
         <div class="element" data-aos="fade-left">
-          <h2 class="text-secondary">About Us</h2>
+          <h2 class="text-primary">About Us</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
             doloribus id velit veritatis tenetur molestias deserunt quis non
@@ -68,7 +72,7 @@
               <i class="fas fa-dice fa-2x"></i>
               <i class="fas fa-magic fa-2x"></i>
             </div>
-            <div class="about-icons-text text-secondary">
+            <div class="about-icons-text text-primary">
               <h3>The best magic clothing for young and old magicians</h3>
               <h3>The best magic supplies, for small and big shows</h3>
               <h3>Modern and old tricks</h3>
@@ -78,13 +82,33 @@
       </div>
     </section>
 
+    <section class="team" id="teamSection">
+      <div class="flex">
+        <h2 class="text-primary">Our Team</h2>
+        <p class="text-dark">Who is under the hats???</p>
+        <div class="container grid grid-3" style="overflow: hidden">
+          <div class="hat" id="h1" data-aos="zoom-in-down">
+            <img src="assets/photo2.jpg" alt="" class="under text-primary" id="u1">
+            <h4 class="text-primary under-text" id="ut1">CEO, Jenna Bon</h4>
+          </div>
+          <div class="hat" id="h2" data-aos="zoom-in-down">
+            <img src="assets/photo3.jpg" alt="" class="under text-primary" id="u2">
+            <h4 class="text-primary under-text" id="ut2">Salesmanager, Katy F</h4>
+          </div>
+          <div class="hat" id="h3" data-aos="zoom-in-down">
+            <img src="assets/photo.jpg" alt="" class="under text-primary" id="u3">
+            <h4 class="text-primary under-text" id="ut3">Magicman, John Doe</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- contact section -->
-    <section class="contact">
+    <section class="contact" id="contactSection">
       <div class="container flex">
         <h1 class="text-primary">Contact Us</h1>
         <p class="text-light">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
-          rem amet consequuntur vel assumenda id.
+          Leave us a message and we will get back to you in 24 hours.
         </p>
         <div class="card" data-aos="flip-up">
           <div class="flex">
@@ -102,20 +126,26 @@
     <footer class="footer">
       <div class="container grid grid-3">
         <div>
-          <h1 class="text-primary">MagX</h1>
+          <h1 class="text-light">MagX</h1>
           <p>Copyright &copy; 2021</p>
         </div>
         <nav>
           <ul>
-            <li><a class="text-primary" href="#">Home</a></li>
-            <li><a class="text-primary" href="#">About Us</a></li>
-            <li><a class="text-primary" href="#">Contact</a></li>
+            <li><a class="text-light" href="#">Home</a></li>
+            <li><a class="text-light" href="#aboutSection">About Us</a></li>
+            <li><a class="text-light" href="#contactSection">Contact</a></li>
           </ul>
         </nav>
         <div class="social">
-          <a href="#"><i class="fab fa-facebook fa-2x text-primary"></i></a>
-          <a href="#"><i class="fab fa-instagram fa-2x text-primary"></i></a>
-          <a href="#"><i class="fab fa-twitter fa-2x text-primary"></i></a>
+          <a href="#"><i class="fab fa-facebook fa-2x text-secondary"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x text-secondary"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x text-secondary"></i></a>
+          <div class="designer flex">
+            <h4 class="text-secondary">Design by RomanJ55</h4>
+            <a href="https://github.com/RomanJ55"
+              ><i class="fab fa-github text-secondary"></i
+            >
+          </div>
         </div>
       </div>
     </footer>

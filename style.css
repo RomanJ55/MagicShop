@@ -7,9 +7,6 @@
   --secondary-color: #08d9d6;
   --dark-color: #252a34;
   --light-color: #eaeaea;
-  /* change colors */
-  --success-color: #5cb85c;
-  --error-color: #d9534f;
 }
 
 * {
@@ -54,10 +51,12 @@ img {
 
 .navbar .logo {
   font-size: 40px;
+  -webkit-text-stroke: 0.5px var(--secondary-color);
+  transition: 1s;
 }
 
 .navbar .logo:hover {
-  color: var(--dark-color);
+  transform: translateX(20px);
 }
 
 .navbar ul {
@@ -70,10 +69,11 @@ img {
   font-size: large;
   letter-spacing: 4px;
   transition: 0.5s;
+  opacity: 0.8;
 }
 
 .navbar a:hover {
-  opacity: 0.2;
+  opacity: 1;
 }
 
 .navbar .flex {
@@ -99,6 +99,12 @@ img {
 .hero h1 {
   font-size: 60px;
   font-weight: bolder;
+  -webkit-text-stroke: 1px var(--light-color);
+  transition: 1s;
+}
+
+.hero h1:hover {
+  transform: scale(1.2);
 }
 
 .hero p {
@@ -109,17 +115,22 @@ img {
 
 /* about section */
 .about {
-  background-color: var(--primary-color);
+  background-color: var(--light-color);
   margin-top: -70px;
+  padding-top: 40px;
 }
 
 .about .element {
-  margin: 20px 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about img {
   max-height: 600px;
+  padding: 20px 0px;
   width: 90%;
+  border-radius: 80px;
+  filter: saturate(var(--primary-color));
 }
 
 .about h2 {
@@ -149,15 +160,82 @@ img {
 
 .about-icons-text h3 {
   margin: 40px 5px;
+  letter-spacing: 2px;
 }
 
 .about-icons i {
   margin: 20px 5px;
+  transition: 1s;
+}
+
+.about-icons i:hover {
+  transform: scale(1.5);
+}
+
+/* team */
+.team {
+  background-color: var(--secondary-color);
+}
+
+.team .flex {
+  flex-direction: column;
+}
+
+.team .grid {
+  align-items: center;
+  justify-content: center;
+  min-height: 740px;
+}
+
+.team h2 {
+  font-size: 45px;
+  letter-spacing: 3px;
+  margin-top: 40px;
+}
+
+.team p {
+  font-size: 30px;
+  letter-spacing: 5px;
+  padding: 5px 20px;
+}
+
+.team .hat {
+  background-image: url("assets/hat.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 340px;
+  height: 300px;
+  transition: 1.5s;
+  position: relative;
+}
+
+.team .hat:hover {
+  transform: translateY(-220px);
+}
+
+.under {
+  position: absolute;
+  top: 260px;
+  left: 75px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  visibility: hidden;
+}
+
+.under-text {
+  visibility: hidden;
+  position: absolute;
+  top: 480px;
+  left: 90px;
+  font-size: 20px;
+  letter-spacing: 3px;
 }
 
 /* contact */
 .contact {
   background-color: var(--dark-color);
+  margin-top: -50px;
 }
 
 .contact .flex {
@@ -167,6 +245,7 @@ img {
 .contact h1 {
   font-size: 40px;
   letter-spacing: 5px;
+  margin-top: 50px;
 }
 
 .contact h2 {
@@ -175,7 +254,7 @@ img {
 }
 
 .contact p {
-  max-width: 600px;
+  max-width: 490px;
   font-size: 20px;
 }
 
@@ -208,6 +287,15 @@ textarea {
 }
 
 /* Footer */
+.footer {
+  background-color: var(--primary-color);
+  padding-top: 30px;
+}
+
+.footer .social {
+  padding-top: 5px;
+}
+
 .footer .social a {
   margin: 0 10px;
 }
@@ -223,7 +311,17 @@ textarea {
 }
 
 .footer h1 {
-  letter-spacing: 6px;
+  font-size: 40px;
+  -webkit-text-stroke: 0.5px var(--secondary-color);
+  transition: 1s;
+}
+
+.footer h1:hover {
+  transform: translateX(20px);
+}
+
+.footer p {
+  margin: 0;
 }
 
 .footer i {
@@ -231,7 +329,13 @@ textarea {
 }
 
 .footer i:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+}
+
+.footer .designer {
+  justify-content: flex-start;
+  margin-left: 15px;
+  margin: 2px;
 }
 
 /* media q */
@@ -239,6 +343,7 @@ textarea {
 @media (max-width: 991.98px) {
   .grid,
   .about .grid,
+  .team .grid,
   .footer .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -252,10 +357,31 @@ textarea {
     height: 100px;
   }
 
+  .contact {
+    margin-top: -10px;
+  }
+
   .contact .card {
     width: 100%;
+  }
 
-  /* more stuff here */
+  .about {
+    margin-top: -100px;
+  }
+
+  .team .hat {
+    width: 240px;
+  }
+
+  .under {
+    top: 180px;
+    left: 30px;
+  }
+
+  .under-text {
+    top: 380px;
+    left: 40px;
+  }
 }
 
 /* phones */
