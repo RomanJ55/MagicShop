@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap");
+/* font here */
+
+:root {
+  /* colors */
+  --primary-color: #ff2e63;
+  --secondary-color: #08d9d6;
+  --dark-color: #252a34;
+  --light-color: #eaeaea;
+  /* change colors */
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Dancing Script", sans-serif;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 15px;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  height: 70px;
+}
+
+.navbar .logo {
+  font-size: 40px;
+}
+
+.navbar .logo:hover {
+  color: var(--dark-color);
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  padding: 10px;
+  margin: 0 5px;
+  font-size: large;
+  letter-spacing: 4px;
+  transition: 0.5s;
+}
+
+.navbar a:hover {
+  opacity: 0.2;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+/* hero section */
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+.hero .flex {
+  flex-direction: column;
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.hero p {
+  font-size: 30px;
+  font-weight: 700;
+  max-width: 600px;
+}
+
+/* about section */
+.about {
+  background-color: var(--primary-color);
+  margin-top: -70px;
+}
+
+.about .element {
+  margin: 20px 0px;
+}
+
+.about img {
+  max-height: 600px;
+  width: 90%;
+}
+
+.about h2 {
+  font-size: 40px;
+}
+
+.about p {
+  font-size: 20px;
+}
+
+.about-list {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-icons {
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-icons-text {
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-icons-text h3 {
+  margin: 40px 5px;
+}
+
+.about-icons i {
+  margin: 20px 5px;
+}
+
+/* contact */
+.contact {
+  background-color: var(--dark-color);
+}
+
+.contact .flex {
+  flex-direction: column;
+}
+
+.contact h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.contact h2 {
+  font-size: 32px;
+  letter-spacing: 3px;
+}
+
+.contact p {
+  max-width: 600px;
+  font-size: 20px;
+}
+
+.contact .card {
+  width: 60%;
+  background-color: var(--secondary-color);
+  margin: 50px 0px;
+}
+
+.contact input,
+textarea {
+  margin: 10px 5px;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  padding: 20px;
+}
+
+.contact input {
+  height: 30px;
+}
+
+.contact textarea {
+  height: 200px;
+  resize: none;
+}
+
+.contact .btn {
+  margin: 10px 0px;
+}
+
+/* Footer */
+.footer .social a {
+  margin: 0 10px;
+}
+
+.footer a {
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: var(--dark-color);
+}
+
+.footer h1 {
+  letter-spacing: 6px;
+}
+
+.footer i {
+  transition: 0.4s;
+}
+
+.footer i:hover {
+  transform: translateY(-10px);
+}
+
+/* media q */
+/* Tablets and under */
+@media (max-width: 991.98px) {
+  .grid,
+  .about .grid,
+  .footer .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar {
+    height: 100px;
+  }
+
+  .contact .card {
+    width: 100%;
+
+  /* more stuff here */
+}
+
+/* phones */
+@media only screen and (max-width: 575.98px) {
+  /* more stuff here */
+}
