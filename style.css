@@ -69,11 +69,10 @@ img {
   font-size: large;
   letter-spacing: 4px;
   transition: 0.5s;
-  opacity: 0.8;
 }
 
 .navbar a:hover {
-  opacity: 1;
+  color: var(--dark-color);
 }
 
 .navbar .flex {
@@ -387,6 +386,22 @@ textarea {
 }
 
 /* phones */
-@media only screen and (max-width: 575.98px) {
-  /* more stuff here */
+@media only screen and (max-width: 400px) {
+  .team .hat {
+    width: 200px;
+  }
+
+  .under {
+    left: 60px;
+    top: -295px;
+  }
+
+  .under img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .under-text {
+    font-size: 14px;
+  }
 }
