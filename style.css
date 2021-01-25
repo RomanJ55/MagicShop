@@ -182,9 +182,9 @@ img {
 }
 
 .team .grid {
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  min-height: 740px;
+  min-height: 760px;
 }
 
 .team h2 {
@@ -203,32 +203,34 @@ img {
   background-image: url("assets/hat.png");
   background-size: contain;
   background-repeat: no-repeat;
+  top: 0;
   width: 340px;
   height: 300px;
-  transition: 1.5s;
+  z-index: 3;
   position: relative;
-}
-
-.team .hat:hover {
-  transform: translateY(-220px);
+  transition: 1s;
 }
 
 .under {
-  position: absolute;
-  top: 260px;
+  position: relative;
+  top: -290px;
   left: 75px;
+  z-index: 1;
+}
+
+.team .hat:hover {
+  top: -240px;
+}
+
+.under img {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  visibility: hidden;
+  width: 180px;
+  height: 180px;
 }
 
 .under-text {
-  visibility: hidden;
-  position: absolute;
-  top: 480px;
-  left: 90px;
-  font-size: 20px;
+  position: relative;
+  font-size: 18px;
   letter-spacing: 3px;
 }
 
@@ -373,14 +375,14 @@ textarea {
     width: 240px;
   }
 
-  .under {
-    top: 180px;
-    left: 30px;
+  .under img {
+    width: 110px;
+    height: 110px;
   }
 
   .under-text {
-    top: 380px;
-    left: 40px;
+    letter-spacing: 2px;
+    left: -35px;
   }
 }
 
