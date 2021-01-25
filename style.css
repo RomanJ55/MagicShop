@@ -183,7 +183,7 @@ img {
 .team .grid {
   align-items: flex-end;
   justify-content: center;
-  min-height: 760px;
+  min-height: 725px;
 }
 
 .team h2 {
@@ -218,7 +218,7 @@ img {
 }
 
 .team .hat:hover {
-  top: -240px;
+  top: -210px;
 }
 
 .under img {
@@ -348,6 +348,7 @@ textarea {
   .footer .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    gap: 10px;
   }
 
   .navbar .flex {
@@ -372,6 +373,10 @@ textarea {
 
   .team .hat {
     width: 240px;
+  }
+
+  .team .hat:hover {
+    top: -135px;
   }
 
   .under img {
