@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap");
-/* font here */
-
 :root {
   /* colors */
   --primary-color: #ff2e63;
@@ -16,7 +13,7 @@
 }
 
 body {
-  font-family: "Dancing Script", sans-serif;
+  font-family: "sans-serif";
   line-height: 1.6;
 }
 
@@ -50,9 +47,12 @@ img {
   height: 70px;
 }
 
+.navbar .container {
+  overflow: hidden;
+}
+
 .navbar .logo {
   font-size: 40px;
-  -webkit-text-stroke: 0.5px var(--secondary-color);
   transition: 1s;
 }
 
@@ -89,6 +89,7 @@ img {
   width: 100%;
   height: 100%;
   z-index: -3;
+  filter: brightness(0.3);
 }
 
 .hero .flex {
@@ -99,8 +100,8 @@ img {
 .hero h1 {
   font-size: 60px;
   font-weight: bolder;
-  -webkit-text-stroke: 1px var(--light-color);
   transition: 1s;
+  text-align: center;
 }
 
 .hero h1:hover {
@@ -108,9 +109,11 @@ img {
 }
 
 .hero p {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   max-width: 600px;
+  text-align: center;
+  line-height: 35px;
 }
 
 /* about section */
@@ -139,6 +142,7 @@ img {
 
 .about p {
   font-size: 20px;
+  text-align: start;
 }
 
 .about-list {
