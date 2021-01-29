@@ -37,6 +37,7 @@ h2 {
 
 p {
   margin: 10px 15px;
+  text-align: center;
 }
 
 img {
@@ -173,7 +174,10 @@ img {
 
 /* team */
 .team {
-  background-color: var(--secondary-color);
+  background: url(https://image.freepik.com/fotos-kostenlos/scheinwerfer-in-ein-grunge-interieur_1048-6921.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .team .flex {
@@ -291,6 +295,7 @@ textarea {
 .footer {
   background-color: var(--primary-color);
   padding-top: 30px;
+  text-align: center;
 }
 
 .footer .social {
@@ -334,7 +339,6 @@ textarea {
 }
 
 .footer .designer {
-  justify-content: flex-start;
   margin-left: 15px;
   margin: 2px;
 }
