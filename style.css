@@ -298,12 +298,11 @@ textarea {
 /* Footer */
 .footer {
   background-color: var(--primary-color);
-  padding-top: 30px;
-  text-align: center;
+  padding: 10px 0;
 }
 
-.footer .social {
-  padding-top: 5px;
+footer .flex {
+  justify-content: space-between;
 }
 
 .footer .social a {
@@ -344,6 +343,10 @@ textarea {
 .footer .designer {
   margin-left: 15px;
   margin: 2px;
+}
+
+.footer nav {
+  text-align: center;
 }
 
 /* media q */
@@ -415,5 +418,17 @@ textarea {
 
   .under-text {
     font-size: 14px;
+  }
+
+  .footer .container {
+    padding: 0 10px;
+  }
+
+  .footer .social {
+    text-align: center;
+  }
+
+  .footer p {
+    margin: 10px 15px;
   }
 }
