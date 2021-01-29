@@ -322,7 +322,6 @@ textarea {
 
 .footer h1 {
   font-size: 40px;
-  -webkit-text-stroke: 0.5px var(--secondary-color);
   transition: 1s;
 }
 
