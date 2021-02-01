@@ -1,22 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-
 :root {
   /* colors */
   --primary-color: #ff1c55;
-  --secondary-color: #08d9d6;
-  --dark-color: #252a34;
-  --light-color: #eaeaea;
+  --dark-color: #0e0e0e;
+  --light-color: #fafafa;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  cursor: url("assets/stick2.png") 2 0, auto;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Lato";
+  font-family: "Segoe UI";
   line-height: 1.6;
 }
 
@@ -30,7 +27,7 @@ a {
 
 h1,
 h2 {
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1.2;
   margin: 10px 0;
 }
@@ -47,7 +44,8 @@ img {
 /* Navbar */
 .navbar {
   background-color: var(--primary-color);
-  height: 70px;
+  height: 50px;
+  position: relative;
 }
 
 .navbar .container {
@@ -55,7 +53,8 @@ img {
 }
 
 .navbar .logo {
-  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
   transition: 1s;
 }
 
@@ -68,10 +67,10 @@ img {
 }
 
 .navbar a {
-  padding: 10px;
-  margin: 0 5px;
+  margin-left: 100px;
   font-size: large;
-  letter-spacing: 4px;
+  transition: 0.5s;
+  font-weight: 500;
   transition: 0.5s;
 }
 
@@ -84,45 +83,61 @@ img {
 }
 
 /* hero section */
+
+.hero {
+  background-color: var(--dark-color);
+  overflow: hidden;
+}
+
 .hero img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  width: 100%;
   height: 100%;
-  z-index: -3;
-  filter: brightness(0.3);
 }
 
 .hero .flex {
   flex-direction: column;
   height: 100vh;
+  align-items: flex-start;
+  margin-top: -90px;
+}
+
+.hero .grid {
+  gap: 10px;
 }
 
 .hero h1 {
-  font-size: 60px;
-  font-weight: bolder;
-  transition: 1s;
-  text-align: center;
-}
-
-.hero h1:hover {
-  transform: scale(1.2);
+  font-size: 82px;
+  font-weight: 500;
 }
 
 .hero p {
-  font-size: 25px;
-  font-weight: 700;
-  max-width: 600px;
-  text-align: center;
-  line-height: 35px;
+  margin: 0;
+  max-width: 80%;
+  text-align: inherit;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.hero span {
+  padding-left: 10px;
+}
+
+.hero .btn {
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hero .btn:hover {
+  transform: translateY(10px);
+}
+
+.hero .btn:hover .hero i {
+  color: var(--primary-color);
 }
 
 /* about section */
 .about {
   background-color: var(--light-color);
-  margin-top: -70px;
   padding: 40px 0;
 }
 
@@ -132,11 +147,7 @@ img {
 }
 
 .about img {
-  max-height: 600px;
-  padding: 20px 0px;
-  width: 90%;
   border-radius: 80px;
-  filter: saturate(var(--primary-color));
 }
 
 .about h2 {
@@ -154,6 +165,7 @@ img {
 .about-list {
   justify-content: flex-start;
   align-items: center;
+  margin-top: 40px;
 }
 
 .about-icons {
@@ -234,6 +246,7 @@ img {
 
 .team .hat-item {
   max-height: 350px;
+  margin: 0 auto;
 }
 
 .team .hat-item:hover .hat {
@@ -269,7 +282,8 @@ img {
 
 .contact h2 {
   font-size: 32px;
-  letter-spacing: 3px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .contact p {
@@ -278,16 +292,16 @@ img {
 }
 
 .contact .card {
-  width: 60%;
-  background-color: var(--secondary-color);
+  width: 65%;
+  background-color: var(--primary-color);
+  color: var(--light-color);
   margin: 50px 0px;
 }
 
 .contact .card label {
   width: 100%;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 18px;
-  color: var(--dark-color);
 }
 
 .contact input,
@@ -310,6 +324,9 @@ textarea {
 
 .contact .btn {
   margin: 10px 0px;
+  background: var(--light-color);
+  color: var(--dark-color);
+  font-weight: bold;
 }
 
 /* Footer */
@@ -367,7 +384,7 @@ footer .flex {
 
 /* media q */
 /* Tablets and under */
-@media (max-width: 991.98px) {
+@media (max-width: 770.98px) {
   .grid,
   .about .grid,
   .team .grid,
@@ -382,7 +399,15 @@ footer .flex {
   }
 
   .navbar {
-    height: 100px;
+    height: 70px;
+  }
+
+  .navbar a {
+    margin-left: 15px;
+  }
+
+  .hero img {
+    display: none;
   }
 
   .contact {
@@ -390,50 +415,41 @@ footer .flex {
   }
 
   .contact .card {
-    width: 100%;
+    width: 70%;
   }
 
   .about {
     margin-top: -100px;
   }
 
-  .team .hat {
-    width: 240px;
-  }
-
-  .team .hat:hover {
-    top: -135px;
-  }
-
-  .under img {
-    width: 110px;
-    height: 110px;
-  }
-
-  .under-text {
-    letter-spacing: 1px;
-    left: -25px;
+  .team h2 {
+    letter-spacing: 0;
   }
 }
 
 /* phones */
 @media only screen and (max-width: 400px) {
-  .team .hat {
-    width: 200px;
+  .hero h1 {
+    font-size: 65px;
   }
 
-  .under {
-    left: 60px;
-    top: -295px;
+  .hero p {
+    line-height: 1.5;
+    max-width: 100%;
   }
 
-  .under img {
-    width: 100px;
-    height: 100px;
+  .hero .btn {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   .under-text {
     font-size: 14px;
+  }
+
+  .contact .card {
+    width: 100%;
   }
 
   .footer .container {
