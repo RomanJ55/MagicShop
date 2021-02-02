@@ -67,7 +67,7 @@ img {
 }
 
 .navbar a {
-  margin-left: 100px;
+  margin-left: 50px;
   font-size: large;
   transition: 0.5s;
   font-weight: 500;
@@ -265,6 +265,46 @@ img {
   letter-spacing: 3px;
 }
 
+/* products */
+.products {
+  background-color: var(--light-color);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.products .grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.products h2 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+}
+
+.products .btn {
+  margin: 50px 0;
+  font-weight: 900;
+}
+
+.products .btn:hover {
+  background-color: var(--dark-color);
+}
+
+.products .card {
+  height: 100%;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products .card img {
+  border: 1px black solid;
+}
+
 /* contact */
 .contact {
   background-color: var(--dark-color);
@@ -410,6 +450,11 @@ footer .flex {
     display: none;
   }
 
+  .products .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
   .contact {
     margin-top: -10px;
   }
@@ -446,6 +491,11 @@ footer .flex {
 
   .under-text {
     font-size: 14px;
+  }
+
+  .products .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .contact .card {
