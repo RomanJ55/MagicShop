@@ -1,8 +1,6 @@
 .container {
-  max-width: 1500px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 40px;
+  margin: 0 12%;
+  overflow: hidden;
 }
 
 /* boxes */
@@ -16,7 +14,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 45px;
+  gap: 2.5em;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -30,11 +28,9 @@
 .card {
   background-color: #fff;
   color: #333;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  margin: 10px;
-  border-radius: 20px;
+  border-radius: 1em;
+  padding: 0.8em;
+  margin: 1em;
 }
 
 /* Button-stuff */
@@ -47,12 +43,13 @@
   border: none;
   border-radius: 5px;
   transition: 0.6s;
+  font-size: 1em;
 }
 
 .btn:hover {
   background-color: var(--light-color);
   color: var(--primary-color);
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 /* Text colors */

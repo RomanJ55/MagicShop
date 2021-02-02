@@ -15,6 +15,7 @@
 body {
   font-family: "Segoe UI";
   line-height: 1.6;
+  font-size: 1em;
 }
 
 ul {
@@ -44,12 +45,8 @@ img {
 /* Navbar */
 .navbar {
   background-color: var(--primary-color);
-  height: 50px;
+  height: 3.5em;
   position: relative;
-}
-
-.navbar .container {
-  overflow: hidden;
 }
 
 .navbar .logo {
@@ -67,8 +64,8 @@ img {
 }
 
 .navbar a {
-  margin-left: 50px;
-  font-size: large;
+  margin-left: 3em;
+  font-size: 1em;
   transition: 0.5s;
   font-weight: 500;
   transition: 0.5s;
@@ -83,14 +80,12 @@ img {
 }
 
 /* hero section */
-
 .hero {
   background-color: var(--dark-color);
-  overflow: hidden;
-}
-
-.hero img {
-  height: 100%;
+  background-image: url(assets/hand.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .hero .flex {
@@ -101,12 +96,13 @@ img {
 }
 
 .hero .grid {
-  gap: 10px;
+  gap: 1em;
 }
 
 .hero h1 {
-  font-size: 82px;
+  font-size: 6em;
   font-weight: 500;
+  line-height: 0.95;
 }
 
 .hero p {
@@ -115,15 +111,17 @@ img {
   text-align: inherit;
   line-height: 2;
   font-weight: 400;
+  font-size: 1em;
+  padding-top: 1.5em;
 }
 
 .hero span {
-  padding-left: 10px;
+  padding-left: 1em;
 }
 
 .hero .btn {
-  margin-top: 50px;
-  font-size: 18px;
+  margin-top: 3em;
+  font-size: 1.1em;
   font-weight: bold;
 }
 
@@ -138,7 +136,7 @@ img {
 /* about section */
 .about {
   background-color: var(--light-color);
-  padding: 40px 0;
+  padding: 2em 0;
 }
 
 .about .element {
@@ -147,25 +145,24 @@ img {
 }
 
 .about img {
-  border-radius: 80px;
+  border-radius: 4em;
 }
 
 .about h2 {
-  font-size: 44px;
+  font-size: 3em;
   margin-top: 0;
 }
 
 .about p {
-  font-size: 18px;
+  font-size: 1.1em;
   text-align: start;
   margin: 0;
-  line-height: 28px;
+  line-height: 1.7em;
 }
 
 .about-list {
   justify-content: flex-start;
   align-items: center;
-  margin-top: 40px;
 }
 
 .about-icons {
@@ -181,12 +178,12 @@ img {
 }
 
 .about-icons-text h3 {
-  margin: 25px 5px;
-  letter-spacing: 2px;
+  margin: 2.5em 0.3em;
+  letter-spacing: 0.1em;
 }
 
 .about-icons i {
-  margin: 20px 5px;
+  margin: 0.8em 0.3em;
   transition: 1s;
 }
 
@@ -200,7 +197,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 40px 0;
+  padding: 2em 0;
 }
 
 .team .flex {
@@ -214,15 +211,9 @@ img {
 }
 
 .team h2 {
-  font-size: 45px;
-  letter-spacing: 3px;
+  font-size: 3em;
+  letter-spacing: 0.1em;
   text-align: center;
-}
-
-.team p {
-  font-size: 30px;
-  letter-spacing: 5px;
-  padding: 5px 20px;
 }
 
 .team .hat {
@@ -261,30 +252,29 @@ img {
 
 .under-text {
   position: relative;
-  font-size: 18px;
-  letter-spacing: 3px;
+  font-size: 1.2em;
 }
 
 /* products */
 .products {
   background-color: var(--light-color);
-  padding: 40px 0;
+  padding: 2em 0;
   text-align: center;
 }
 
 .products .grid {
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 1.5em;
 }
 
 .products h2 {
-  font-size: 40px;
-  letter-spacing: 5px;
-  margin-bottom: 60px;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5em;
 }
 
 .products .btn {
-  margin: 50px 0;
+  margin: 4em 0;
   font-weight: 900;
 }
 
@@ -294,21 +284,23 @@ img {
 
 .products .card {
   height: 100%;
-  margin: 30px 0;
+  margin: 1em 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  background-color: #c5c5c5;
+  color: var(--primary-color);
 }
 
 .products .card img {
-  border: 1px black solid;
+  border-radius: 1em;
 }
 
 /* contact */
 .contact {
   background-color: var(--dark-color);
-  padding-top: 40px;
+  padding-top: 2em;
 }
 
 .contact .flex {
@@ -316,40 +308,35 @@ img {
 }
 
 .contact h1 {
-  font-size: 40px;
-  letter-spacing: 5px;
+  font-size: 3em;
+  letter-spacing: 0.1em;
   text-align: center;
 }
 
-.contact p {
-  max-width: 490px;
-  font-size: 20px;
-}
-
 .contact .card {
-  width: 65%;
+  width: 55%;
   background-color: var(--primary-color);
   color: var(--light-color);
-  margin: 50px 0px;
+  margin: 3.2em 0px;
 }
 
 .contact .card label {
   width: 100%;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 .contact input,
 textarea {
-  margin: 10px 5px;
+  margin: 1em 0.5em;
   border: none;
-  border-radius: 6px;
+  border-radius: 0.6em;
   width: 100%;
-  padding: 20px;
+  padding: 1.3em;
 }
 
 .contact input {
-  height: 30px;
+  height: 3em;
 }
 
 .contact textarea {
@@ -358,7 +345,7 @@ textarea {
 }
 
 .contact .btn {
-  margin: 10px 0px;
+  margin: 1em 0;
   background: var(--light-color);
   color: var(--dark-color);
   font-weight: bold;
@@ -367,7 +354,7 @@ textarea {
 /* Footer */
 .footer {
   background-color: var(--primary-color);
-  padding: 10px 0;
+  padding: 0.5em 0;
 }
 
 footer .flex {
@@ -388,7 +375,7 @@ footer .flex {
 }
 
 .footer h1 {
-  font-size: 40px;
+  font-size: 2.5em;
   transition: 1s;
   margin: 0;
 }
@@ -420,6 +407,13 @@ footer .flex {
 /* media q */
 /* Tablets and under */
 @media (max-width: 790px) {
+  body {
+    font-size: 0.9em;
+  }
+  .container {
+    margin: 0 8%;
+  }
+
   .grid,
   .about .grid,
   .team .grid,
@@ -429,25 +423,17 @@ footer .flex {
     gap: 10px;
   }
 
-  .navbar .flex {
-    flex-direction: column;
-  }
-
-  .navbar {
-    height: 70px;
-  }
-
   .navbar a {
-    margin-left: 15px;
+    margin-left: 1.8em;
   }
 
-  .hero img {
-    display: none;
+  .hero {
+    background-image: none;
   }
 
   .products .grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 2em;
   }
 
   .contact {
@@ -455,7 +441,7 @@ footer .flex {
   }
 
   .contact .card {
-    width: 70%;
+    width: 90%;
   }
 
   .about {
@@ -469,8 +455,27 @@ footer .flex {
 
 /* phones */
 @media (max-width: 580px) {
+  body {
+    font-size: 0.8em;
+  }
+  .container {
+    margin: 0 4%;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar {
+    height: 5em;
+  }
+
+  .navbar a {
+    margin-left: 0.7em;
+  }
+
   .hero h1 {
-    font-size: 65px;
+    font-size: 5em;
   }
 
   .hero p {
@@ -480,7 +485,6 @@ footer .flex {
 
   .hero .btn {
     margin-top: 30px;
-    font-size: 18px;
     font-weight: bold;
   }
 
@@ -490,7 +494,6 @@ footer .flex {
 
   .products .grid {
     grid-template-columns: 1fr;
-    gap: 40px;
   }
 
   .contact .card {
@@ -507,5 +510,15 @@ footer .flex {
 
   .footer .social a {
     margin: 0 2px;
+  }
+}
+
+@media (min-width: 2000px) {
+  body {
+    font-size: 1.8em;
+  }
+
+  .under-text {
+    font-size: 0.65em;
   }
 }
